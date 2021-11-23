@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(36, 36, 36);
+    font-size: 15px;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+}
+
+.logo-header {
+    color: rgb(230, 230, 230);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+.container {
+    color: rgb(236, 236, 236);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 90px auto;
+    border: 2px double rgb(116, 112, 56);
+    overflow: hidden;
+}
+
+.login-register-container {
+    color: rgb(36, 36, 36);
+    width: 400px;
+    height: 500px;
+}
+
+.login-container, .register-container {
+    background-color: rgb(228, 228, 228);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-container {
+    display: none;
+}
+
+.login-header, .register-header {
+    margin-left: 52px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.register-header {
+    padding-top: 10px;
+}
+
+.form-group, .form-group-2 {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 16px 0;
+}
+
+.form-group-2 {
+    margin: 6px 0;
+}
+.form-group input, .form-group-2 input {
+    font-family: 'Poppins';
+    padding: 0 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    height: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.form-group input::placeholder, .form-group-2 input::placeholder {
+    color: rgb(90, 90, 90);
+}
+
+.login-btn, .register-btn {
+    background-color: rgb(36, 36, 36);
+    color: rgb(228, 228, 228);
+    margin: 16px 0;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background-color: rgb(61, 61, 61);
+    transition: ease-in-out 0.1s;
+}
+
+.login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.forgot-username, .forgot-password {
+    cursor: pointer;
+    color: rgb(138, 138, 138);
+    text-align: center;
+    font-size: 14px;
+}
+
+.card-container {
+    color: rgb(236, 236, 236);
+    background-color: rgb(36, 36, 36);
+}
+
+.card, .card-2 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header, .card-header-2 {
+    text-align: center;
+}
+
+.card-desc, .card-desc-2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.card-btn, .card-btn-2 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.card-btn:hover, .card-btn-2:hover {
+    background-color: rgb(175, 175, 175);
+    transition: ease-in-out 0.1s;
+}
+
+.register-error, .login-error {
+    background-color: rgb(228, 189, 189);
+    border: 1px solid rgb(201, 137, 137);
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(179, 78, 78);
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: center;
+    width: 800px;
+}
+
+.register-success {
+    background-color: rgb(209, 255, 209);
+    border: 1px solid rgb(86, 136, 86);
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(57, 112, 57);
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto;
+    width: 800px;
+}
+

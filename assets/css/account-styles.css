@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'Poppins', sans-serif;
+}
+.account-card {
+    margin: 50px auto;
+    padding: 50px;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color:rgb(77, 77, 77);
+}
+
+.account-header {
+    font-size: 30px;
+    color: rgb(70, 70, 70);
+    text-align: center;
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 50%;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    width: 40%;
+}
+
+.column-2 {
+    width: 60%;
+    background-color: rgb(228, 228, 228);
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.logout-btn {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color:#31a9ce;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: ease-in-out .2s;
+}
+
+.logout-btn:hover {
+    background-color:#2d8aa7;
+}
