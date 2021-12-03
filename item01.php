@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/assets/css/item01-styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/cecb91c862.js" crossorigin="anonymous"></script>
-    <title>FirstWatch | Item01</title>
+    <title>FirstWatch | Sky-Dweller</title>
 </head>
 <body>
     <?
@@ -42,7 +42,7 @@
         ?>
         <div class="container">
             <div class="image-container">
-                <h1 class="item-name">Item01</h1>
+                <h1 class="item-name">Sky-Dweller</h1>
                 <img src="/assets/images/item01.png">
             </div>
             <div class="detail-container">
@@ -52,7 +52,7 @@
                 </p>
                 <div class="price">$
                     <?
-                        $select = $db->prepare("SELECT * FROM inventory WHERE name='item01'");
+                        $select = $db->prepare("SELECT * FROM inventory WHERE name='Sky-Dweller'");
                         $select->execute();
                         $result= $select->fetch(PDO::FETCH_ASSOC);
                         echo $result['price'];   
@@ -61,9 +61,6 @@
                 <button class="add-to-cart-btn">Add to Cart</button>
                 <p class="left-in-stock">
                     <?
-                        $select = $db->prepare("SELECT * FROM inventory WHERE name='item01'");
-                        $select->execute();
-                        $result= $select->fetch(PDO::FETCH_ASSOC);
                         echo $result['stock'];   
                     ?> 
                     left in stock
@@ -81,11 +78,7 @@
         </div>
         <div class="review-container">
             <h2 class="rating-header">Item Rating: <? 
-                include 'db_connection.php';
-                $select = $db->prepare("SELECT rating FROM inventory WHERE name='item01'");
-                $select->execute();
-                $results= $select->fetch(PDO::FETCH_ASSOC);
-                echo $results['rating'];
+                echo $result['rating'];
              ?> stars</h2>
             <?  
                 include './assets/php/draw_chart.php';

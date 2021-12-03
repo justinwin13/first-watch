@@ -5,27 +5,27 @@
         google.charts.setOnLoadCallback(drawChart);
         <?
             include './assets/php/db_connection.php';
-            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='1' AND item='item01'");
+            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='1' AND item='Sky-Dweller'");
             $select->execute();
             $result= $select->fetch(PDO::FETCH_ASSOC);
             $star1 = $result['count'];
 
-            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='2' AND item='item01'");
+            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='2' AND item='Sky-Dweller'");
             $select->execute();
             $result= $select->fetch(PDO::FETCH_ASSOC);
             $star2 = $result['count'];
 
-            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='3' AND item='item01'");
+            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='3' AND item='Sky-Dweller'");
             $select->execute();
             $result= $select->fetch(PDO::FETCH_ASSOC);
             $star3 = $result['count'];
 
-            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='4' AND item='item01'");
+            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='4' AND item='Sky-Dweller'");
             $select->execute();
             $result= $select->fetch(PDO::FETCH_ASSOC);
             $star4 = $result['count'];
 
-            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='5' AND item='item01'");
+            $select = $db->prepare("SELECT COUNT(*) as count FROM reviews WHERE rating='5' AND item='Sky-Dweller'");
             $select->execute();
             $result= $select->fetch(PDO::FETCH_ASSOC);
             $star5 = $result['count'];

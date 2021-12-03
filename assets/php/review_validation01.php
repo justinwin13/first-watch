@@ -13,7 +13,7 @@
                 return $data;
             }
 
-            $item = "item01";
+            $item = "Sky-Dweller";
             $review = validate($_POST["review-input"]);
             $stars = validate($_POST["stars"]);
             $total_rating = 0;

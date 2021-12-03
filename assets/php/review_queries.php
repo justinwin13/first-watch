@@ -3,7 +3,7 @@
     if (isset($_SESSION['username'])) {
         include 'db_connection.php';
 
-        $item = "item01";
+        $item = "Sky-Dweller";
         $select = $db->prepare("SELECT username,review,rating FROM reviews WHERE item=?");
         $select->bindparam(1, $item);
         $select->execute();
