@@ -27,8 +27,8 @@
             $select->execute();
             if($select->rowCount() > 0) {
                 $result= $select->fetch(PDO::FETCH_ASSOC);
-                $_SESSION['firstname'] = $result['first_name'];
-                $_SESSION['lastname'] = $result['last_name'];
+                $_SESSION['firstname'] = $result['firstname'];
+                $_SESSION['lastname'] = $result['lastname'];
                 $_SESSION['username'] = $result['username'];
                 $_SESSION['password'] = $result['password'];
                 header("Location: /home.php");
